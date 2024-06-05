@@ -48,6 +48,11 @@ function generateMobileConfig(extensionId) {
                 <key>ExtensionInstallSources</key>
                 <array>
                   <string>http://localhost:${state.PORT}/*</string>
+                  ${
+                    state.INSTALL_SOURCE
+                      ? `<string>${state.INSTALL_SOURCE}/*</string>`
+                      : ""
+                  }
                 </array>
               </dict>
             </dict>

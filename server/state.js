@@ -17,6 +17,7 @@ let _lastExtensionName;
 let _lastExtensionVersion;
 
 module.exports.PORT = process.env.PORT ? parseInt(process.env.PORT) : 8080;
+module.exports.INSTALL_SOURCE = process.env.INSTALL_SOURCE;
 
 /**
  * Saves information about the last uploaded extension in memory. This is used
